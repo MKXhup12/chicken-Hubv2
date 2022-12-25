@@ -7,7 +7,7 @@ getgenv().Config = {
     bartilo = true,
     donswan = true,
 
-    fastattack = true,
+    fastattack = false,
     fastatkmode = "very",--n,f,very
     buso = true,
     ken = true,
