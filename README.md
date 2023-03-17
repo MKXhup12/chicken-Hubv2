@@ -33,7 +33,7 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.BorderSizePixel = 0
         ThunderImageUI.Position = UDim2.new(0.0, 0, 0.0, 0)
         ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
-        ThunderImageUI.Image = "http://www.roblox.com/asset/?id=12511245920"
+        ThunderImageUI.Image = "http://www.roblox.com/asset/?i"
 
 do
 	local ui = game.CoreGui:FindFirstChild("SimpleUI")
