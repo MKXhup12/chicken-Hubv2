@@ -3513,7 +3513,7 @@ end
 spawn(function()
     pcall(function()
         while wait() do
-            if _G.Mirage or _G.AutoAdvanceDungeon or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoBounty or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.GrabChest or _G.AutoFarmBounty or _G.Holy_Torch or _G.AutoFarm or _G.Clip or FarmBoss or _G.Auto_Next or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or  _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
+            if _G.AutoBossLaw or _G.AutoAdvanceDungeon or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoBounty or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.GrabChest or _G.AutoFarmBounty or _G.Holy_Torch or _G.AutoFarm or _G.Clip or FarmBoss or _G.Auto_Next or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or  _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
                 if not game:GetService("Players").LocalPlayer.Character.HumanoidRootPart:FindFirstChild("BodyClip") then
                     local Noclip = Instance.new("BodyVelocity")
                     Noclip.Name = "BodyClip"
@@ -3529,7 +3529,7 @@ end)
 spawn(function()
     pcall(function()
         game:GetService("RunService").Stepped:Connect(function()
-            if _G.Mirage or _G.AutoAdvanceDungeon or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoBounty or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.GrabChest or _G.AutoFarmBounty or _G.Holy_Torch or _G.Auto_Next or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or  _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
+            if _G.AutoBossLaw or _G.AutoAdvanceDungeon or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoBounty or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.GrabChest or _G.AutoFarmBounty or _G.Holy_Torch or _G.Auto_Next or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or  _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
                 for _, v in pairs(game:GetService("Players").LocalPlayer.Character:GetDescendants()) do
                     if v:IsA("BasePart") then
                         v.CanCollide = false    
@@ -3542,7 +3542,7 @@ end)
 
 spawn(function()
     while wait() do
-        if _G.Mirage or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.AutoFarm or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
+        if _G.AutoBossLaw or _G.AutoDoughtBoss or _G.Auto_DungeonMobAura or _G.AutoFarmChest or _G.AutoFarmBossHallow or _G.AutoFarmSwanGlasses or _G.AutoLongSword or _G.AutoBlackSpikeycoat or _G.AutoElectricClaw or _G.AutoFarmGunMastery or _G.AutoHolyTorch or _G.AutoLawRaid or _G.AutoFarmBoss or _G.AutoTwinHooks or _G.AutoOpenSwanDoor or _G.AutoDragon_Trident or _G.AutoSaber or _G.NOCLIP or _G.AutoFarmFruitMastery or _G.AutoFarmGunMastery or _G.TeleportIsland or _G.Auto_EvoRace or _G.AutoFarmAllMsBypassType or _G.AutoObservationv2 or _G.AutoMusketeerHat or _G.AutoEctoplasm or _G.AutoRengoku or _G.Auto_Rainbow_Haki or _G.AutoObservation or _G.AutoDarkDagger or _G.Safe_Mode or _G.MasteryFruit or _G.AutoBudySword or _G.AutoAllBoss or _G.Auto_Bounty or _G.AutoSharkman or _G.Auto_Mastery_Fruit or _G.Auto_Mastery_Gun or _G.Auto_Dungeon or _G.Auto_Cavender or _G.Auto_Pole or _G.Auto_Kill_Ply or _G.Auto_Factory or _G.AutoSecondSea or _G.TeleportPly or _G.AutoBartilo or _G.Auto_DarkBoss or _G.AutoFarm or _G.Clip or _G.AutoElitehunter or _G.AutoThirdSea or _G.AutoFarmBone or _G.Auto_Soul_Guitar or _G.Auto_Yama or _G.Auto_Tushita or _G.Setting_weapon or _G.ServerHop or _G.FastBoss or _G.checkup or _G.Tushitahop or _G.Auto_Raid == true then
             pcall(function()
                 game:GetService("ReplicatedStorage").Remotes.CommE:FireServer("Ken",true)
             end)
@@ -3744,7 +3744,7 @@ local  Teleport = SOMEXHUB:AddTab("Teleport","11155851001")
 local   Dungeon = SOMEXHUB:AddTab("Dungeon","7044284832")
 local  Fruit = SOMEXHUB:AddTab("Fruit","7044233235")
 local  Shop = SOMEXHUB:AddTab("Shop","6031265976")
-local  Misc = SOMEXHUB:AddTab("Misc","6031265976")
+local  Misc = SOMEXHUB:AddTab("Misc","11156061121")
     
     Main:AddSeperator("Main")
     
@@ -5230,187 +5230,7 @@ spawn(function()
 					end
 				end
 		end)
-
-Main:AddSeperator("Mirage Island ")
-
-local Mirragecheck = Main:AddLabel('...')
-
-spawn(function()
-        pcall(function()
-            while wait() do
-    if game.Workspace._WorldOrigin.Locations:FindFirstChild('Mirage Island') then
-    Mirragecheck:Set('🏝️ : Mirage Island is Spawning 🟢')
-    else
-      Mirragecheck:Set('🏝️ : Mirage Island Not Found ❌')
-    end
-            end
-        end)
-end)
-
-Main:AddToggle("Auto Mirage Island",false,function(value)
-_G.Mirage = value
-end)
-
-spawn(function()
-        pcall(function()
-            while wait() do
-             if _G.Mirage then
-              if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
-                function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/250,Enum.EasingStyle.Linear),{CFrame=a})tweenrach:Play()end;toTargetWait(workspace.Map.MysticIsland.PrimaryPart.CFrame*CFrame.new(0,250,0))
-                else
-game.StarterGui:SetCore("SendNotification", {
-        Title = ""; -- the title (ofc)
-        Text = "Mirage not Found!"; -- what the text says (ofc)
-        Icon = "rbxassetid://"; -- the image if u want. 
-        Duration = 3; -- how long the notification should in secounds
-        })
-                if _G.MirageHop then
-                wait(6)
-                Hop()
-                end          
-            end
-end
-end
-end)
-end)
-
-Main:AddToggle("Auto Mirage Island Hop",false,function(value)
- _G.Mystichop = value
-end)
-
-JobiJoin = ""
-
-     Main:AddTextbox("Join With jobId", "", true, function(Value)
-       JobiJoin = Value
-     end)
-
-Main:AddButton("Join Server",function()
-        game:GetService("TeleportService"):TeleportToPlaceInstance(game.placeId, JobiJoin, game.Players.LocalPlayer)
-    end)
-
-Main:AddSeperator("Race V4")
-    
-    Main:AddButton("Teleport To Timple Of Time",function()
-  Game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(28286.35546875, 14895.3017578125, 102.62469482421875)
-    end)
-    
-Main:AddButton("Teleport To Lever Pull",function()
-  topos(CFrame.new(28575.181640625, 14936.6279296875, 72.31636810302734))
-end)
-
-Main:AddButton("Teleport To Acient One (Must Be in Temple Of Time!)",function()
-  topos(CFrame.new(28981.552734375, 14888.4267578125, -120.245849609375))
-end)
-
-Main:AddToggle("วาปไปหาเกียร์",function(value)
-  TP(game:GetService("Workspace").Map.MysticIsland:FindFirstChildOfClass("MeshPart").CFrame)
-end)
-
-Main:AddSeperator(" Dual Curse Katana ")
-
-Main:AddToggle("Dual Curse Katana",_G.AutoCdk,function(value)
- _G.AutoCdk = value
-end)
-
-spawn(function()
-		while wait() do
-			pcall(function()
-				if _G.AutoCdk then
-					if GetMaterial("Alucard Fragment") == 0 then
-						Auto_Quest_Yama_1 = true
-						Auto_Quest_Yama_2 = false
-						Auto_Quest_Yama_3 = false
-						Auto_Quest_Tushita_1 = false
-						Auto_Quest_Tushita_2 = false
-						Auto_Quest_Tushita_3 = false
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Evil")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Evil")
-					elseif GetMaterial("Alucard Fragment") == 1 then
-						Auto_Quest_Yama_1 = false
-						Auto_Quest_Yama_2 = true
-						Auto_Quest_Yama_3 = false
-						Auto_Quest_Tushita_1 = false
-						Auto_Quest_Tushita_2 = false
-						Auto_Quest_Tushita_3 = false
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Evil")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Evil")
-					elseif GetMaterial("Alucard Fragment") == 2 then
-						Auto_Quest_Yama_1 = false
-						Auto_Quest_Yama_2 = false
-						Auto_Quest_Yama_3 = true
-						Auto_Quest_Tushita_1 = false
-						Auto_Quest_Tushita_2 = false
-						Auto_Quest_Tushita_3 = false
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Evil")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Evil")
-					elseif GetMaterial("Alucard Fragment") == 3 then
-						Auto_Quest_Yama_1 = false
-						Auto_Quest_Yama_2 = false
-						Auto_Quest_Yama_3 = false
-						Auto_Quest_Tushita_1 = true
-						Auto_Quest_Tushita_2 = false
-						Auto_Quest_Tushita_3 = false
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Good")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Good")
-					elseif GetMaterial("Alucard Fragment") == 4 then
-						Auto_Quest_Yama_1 = false
-						Auto_Quest_Yama_2 = false
-						Auto_Quest_Yama_3 = false
-						Auto_Quest_Tushita_1 = false
-						Auto_Quest_Tushita_2 = true
-						Auto_Quest_Tushita_3 = false
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Good")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Good")
-					elseif GetMaterial("Alucard Fragment") == 5 then
-						Auto_Quest_Yama_1 = false
-						Auto_Quest_Yama_2 = false
-						Auto_Quest_Yama_3 = false
-						Auto_Quest_Tushita_1 = false
-						Auto_Quest_Tushita_2 = false
-						Auto_Quest_Tushita_3 = true
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Good")
-						game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","StartTrial","Good")
-					elseif GetMaterial("Alucard Fragment") == 6 then
-						if game:GetService("Workspace").Enemies:FindFirstChild("Cursed Skeleton Boss [Lv. 2025] [Boss]") or game:GetService("Workspace").ReplicatedStorage:FindFirstChild("Cursed Skeleton Boss [Lv. 2025] [Boss]") then
-							Auto_Quest_Yama_1 = false
-							Auto_Quest_Yama_2 = false
-							Auto_Quest_Yama_3 = false
-							Auto_Quest_Tushita_1 = false
-							Auto_Quest_Tushita_2 = false
-							Auto_Quest_Tushita_3 = false
-							if game:GetService("Workspace").Enemies:FindFirstChild("Cursed Skeleton Boss [Lv. 2025] [Boss]") or game:GetService("Workspace").Enemies:FindFirstChild("Cursed Skeleton [Lv. 2200]") then
-								for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
-									if v.Name == "Cursed Skeleton Boss [Lv. 2025] [Boss]" or v.Name == "Cursed Skeleton [Lv. 2200]" then
-										if v.Humanoid.Health > 0 then
-											v.HumanoidRootPart.CanCollide = false
-											v.HumanoidRootPart.Size = Vector3.new(60, 60, 60)
-											topos(v.HumanoidRootPart.CFrame * CFrame.new(0,50,0))
-											game:GetService'VirtualUser':CaptureController()
-											game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
-										end
-									end
-								end
-							end
-						else
-							if (CFrame.new(-12361.7060546875, 603.3547973632812, -6550.5341796875).Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 100 then
-								game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Good")
-								wait(1)
-								game:GetService("ReplicatedStorage").Remotes.CommF_:InvokeServer("CDKQuest","Progress","Evil")
-								wait(1)
-								topos(CFrame.new(-12361.7060546875, 603.3547973632812, -6550.5341796875))
-								wait(1.5)
-								game:GetService("VirtualInputManager"):SendKeyEvent(true, "E", false, game)
-								wait(1.5)
-								topos(CFrame.new(-12253.5419921875, 598.8999633789062, -6546.8388671875))
-							else
-								topos(CFrame.new(-12361.7060546875, 603.3547973632812, -6550.5341796875))
-							end   
-						end
-					end
-				end
-			end)
-		end
-	end)
+		
 
 Combat:AddSeperator(" Kill Player ")
 
@@ -6866,18 +6686,7 @@ end
 end)
 
 Misc:AddToggle("Remove Fog ลบหมอก",RemoveFog,function(value)
-   _G.ReMoveFog=value
-end)
-
-spawn(function()
-    while task.wait() do
-        if ReMoveFog then
-            game.Lighting.FogEnd = 9e9
-            if not RemoveFog then
-                game.Lighting.FogEnd = 2500
-            end
-        end
-    end
+  
 end)
 
 Misc:AddSeperator("Ui")
@@ -7324,8 +7133,21 @@ Misc:AddButton("Kaitun Cap", function(value)
 		end
 	end
 
+Misc:AddToggle("fast attack speed",_G.FastAttackNormalSpeed,function(value)
+	_G.FastAttackNormalSpeed = value
 
-            local SeraphFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
+spawn(function()
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if _G.FastAttackNormalSpeed == true then
+            game.Players.LocalPlayer.Character.Stun.Value = 0
+            game.Players.LocalPlayer.Character.Humanoid.Sit = false
+            game.Players.LocalPlayer.Character.Busy.Value = false        
+        end
+    end)
+end)
+
+
+local SeraphFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
             local VirtualUser = game:GetService('VirtualUser')
             local RigControllerR = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.RigController))[2]
             local Client = game:GetService("Players").LocalPlayer
@@ -7345,14 +7167,14 @@ Misc:AddButton("Kaitun Cap", function(value)
                 local Characters = workspace.Characters:GetChildren()
                 for i=1,#Enemies do local v = Enemies[i]
                     local Human = v:FindFirstChildOfClass("Humanoid")
-                    if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+5 then
+                    if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+55 then
                         table.insert(Hits,Human.RootPart)
                     end
                 end
                 for i=1,#Characters do local v = Characters[i]
                     if v ~= game.Players.LocalPlayer.Character then
                         local Human = v:FindFirstChildOfClass("Humanoid")
-                        if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+5 then
+                        if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+55 then
                             table.insert(Hits,Human.RootPart)
                         end
                     end
@@ -7360,18 +7182,23 @@ Misc:AddButton("Kaitun Cap", function(value)
                 return Hits
             end
             
-            task.spawn(
+            spawn(
                 function()
-                while wait(0) do
+                while  task.wait() do
                     if  _G.FastAttackNormalSpeed then
                         if SeraphFrame.activeController then
-                            -- if v.Humanoid.Health > 0 then
+                            if v.Humanoid.Health > 0 then
+                              SeraphFrame.activeController.attacking = false
+                                SeraphFrame.activeController.timeToNextBlock = 0
+                               SeraphFrame.activeController.humanoid.AutoRotate = true
+                               SeraphFrame.activeController.increment = 3
+                               SeraphFrame.activeController.blocking = false
+                               SeraphFrame.activeController.hitboxMagnitude = 200
                                 SeraphFrame.activeController.timeToNextAttack = 0
                                 SeraphFrame.activeController.focusStart = 0
-                                SeraphFrame.activeController.hitboxMagnitude = 40
                                 SeraphFrame.activeController.humanoid.AutoRotate = true
                                 SeraphFrame.activeController.increment = 1 + 1 / 1
-                            -- end
+                             end
                         end
                     end
                 end
@@ -7389,7 +7216,7 @@ Misc:AddButton("Kaitun Cap", function(value)
                 end)
             end
             
-            local cdnormal = 0
+            local cdnormal = 9e9
             local Animation = Instance.new("Animation")
             local CooldownFastAttack = 0
             Attack = function()
@@ -7397,12 +7224,12 @@ Misc:AddButton("Kaitun Cap", function(value)
                 if ac and ac.equipped then
                     task.spawn(
                         function()
-                        if tick() - cdnormal > 0.5 then
+                        if tick() - cdnormal > 9e9 then
                             ac:attack()
                             cdnormal = tick()
                         else
                              Animation.AnimationId = ac.anims.basic[2]
-                            ac.humanoid:LoadAnimation(Animation):Play(2, 2) --ท่าไม่ทำงานแก้เป็น (1,1)
+                            ac.humanoid:LoadAnimation(Animation):Play(100, 99) --à¸—à¹ˆà¸²à¹„à¸¡à¹ˆà¸—à¸³à¸‡à¸²à¸™à¹à¸à¹‰à¹€à¸›à¹‡à¸™ (1,1)
                             game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", getHits(120), 2, "")
                         end
                     end)
@@ -7411,10 +7238,10 @@ Misc:AddButton("Kaitun Cap", function(value)
             
             b = tick()
             spawn(function()
-                while wait(0) do
+                while  task.wait() do
                     if  _G.FastAttackNormalSpeed then
                         if b - tick() > 0.75 then
-                            wait(.2)
+                            task.wait()
                             b = tick()
                         end
                         pcall(function()
@@ -7422,7 +7249,7 @@ Misc:AddButton("Kaitun Cap", function(value)
                                 if v.Humanoid.Health > 0 then
                                     if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 40 then
                                         Attack()
-                                        wait(0)
+                                        task.wait()
                                         Boost()
                                     end
                                 end
@@ -7434,17 +7261,17 @@ Misc:AddButton("Kaitun Cap", function(value)
             
             k = tick()
             spawn(function()
-                while wait(0) do
+                while  task.wait() do
                     if  _G.FastAttackNormalSpeed then
                         if k - tick() > 0.75 then
-                            wait(0)
+                            task.wait()
                             k = tick()
                         end
                         pcall(function()
                             for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
                                 if v.Humanoid.Health > 0 then
                                     if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 40 then
-                                    wait(0)
+                                    task.wait()
                                     Unboost()
                                     end
                                 end
@@ -7455,7 +7282,7 @@ Misc:AddButton("Kaitun Cap", function(value)
             end)
             
             tjw1 = true
-            task.spawn(
+            spawn(
                 function()
                     local a = game.Players.LocalPlayer
                     local b = require(a.PlayerScripts.CombatFramework.Particle)
@@ -7477,7 +7304,7 @@ Misc:AddButton("Kaitun Cap", function(value)
                                         d:Play(15.25, 15.25, 15.25)
                                         h(i)
                                         b.play = shared.cpc
-                                        wait(0)
+                                       task.wait()
                                         d:Stop()
                                     end
                                 end
@@ -7495,7 +7322,7 @@ Misc:AddButton("Kaitun Cap", function(value)
             local Client = game.Players.LocalPlayer
             local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
             local STOPRL = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
-            task.spawn(function()
+            spawn(function()
                 pcall(function()
                     if not shared.orl then
                         shared.orl = STOPRL.wrapAttackAnimationAsync
@@ -7504,6 +7331,7 @@ Misc:AddButton("Kaitun Cap", function(value)
                             shared.cpc = STOP.play 
                         end
                     spawn(function()
+                    require(game.ReplicatedStorage.Util.CameraShaker):Stop()
                   require(game.ReplicatedStorage.Util.CameraShaker):Stop()
                         game:GetService("RunService").Stepped:Connect(function()
                             STOPRL.wrapAttackAnimationAsync = function(a,b,c,d,func)
@@ -7511,15 +7339,15 @@ Misc:AddButton("Kaitun Cap", function(value)
                                 if Hits then
                                     if  _G.FastAttackNormalSpeed then
                                         STOP.play = function() end
-                                        a:Play(10.1,9.1,8.1)
+                                        a:Play(20.1,15.1,10.1)
                                         func(Hits)
                                         STOP.play = shared.cpc
-                                        wait(a.length * 10.5)
+                                        wait(a.length * .0)
                                         a:Stop()
                                     else
                                         func(Hits)
                                         STOP.play = shared.cpc
-                                        wait(a.length * 10.5)
+                                        wait(a.length * .0)
                                         a:Stop()
                                     end
                                 end
@@ -7528,52 +7356,242 @@ Misc:AddButton("Kaitun Cap", function(value)
                     end)
                 end)
                 end)
-                
-local CameraShaker = require(game.ReplicatedStorage.Util.CameraShaker)
-CombatFrameworkR = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-y = debug.getupvalues(CombatFrameworkR)[2]
-spawn(function()
-    game:GetService("RunService").RenderStepped:Connect(function()
-        if _G.FastAttack then
-            if typeof(y) == "table" then
-                pcall(function()
-                    CameraShaker:Stop()
-                    y.activeController.timeToNextAttack = (math.huge^math.huge^math.huge)
-                    y.activeController.timeToNextAttack = 0
-                    y.activeController.hitboxMagnitude = 60
-                    y.activeController.active = false
-                    y.activeController.timeToNextBlock = 0
-                    y.activeController.focusStart = 1655503339.0980349
-                    y.activeController.increment = 0
-                    y.activeController.blocking = false
-                    y.activeController.attacking = false
-                    y.activeController.humanoid.AutoRotate = true
+
+
+ local SeraphFrame = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts:WaitForChild("CombatFramework")))[2]
+            local VirtualUser = game:GetService('VirtualUser')
+            local RigControllerR = debug.getupvalues(require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.RigController))[2]
+            local Client = game:GetService("Players").LocalPlayer
+            local DMG = require(Client.PlayerScripts.CombatFramework.Particle.Damage)
+            
+            function SeraphFuckWeapon() 
+                local p13 = SeraphFrame.activeController
+                local wea = p13.blades[1]
+                if not wea then return end
+                while wea.Parent~=game.Players.LocalPlayer.Character do wea=wea.Parent end
+                return wea
+            end
+            
+            function getHits(Size)
+                local Hits = {}
+                local Enemies = workspace.Enemies:GetChildren()
+                local Characters = workspace.Characters:GetChildren()
+                for i=1,#Enemies do local v = Enemies[i]
+                    local Human = v:FindFirstChildOfClass("Humanoid")
+                    if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+55 then
+                        table.insert(Hits,Human.RootPart)
+                    end
+                end
+                for i=1,#Characters do local v = Characters[i]
+                    if v ~= game.Players.LocalPlayer.Character then
+                        local Human = v:FindFirstChildOfClass("Humanoid")
+                        if Human and Human.RootPart and Human.Health > 0 and game.Players.LocalPlayer:DistanceFromCharacter(Human.RootPart.Position) < Size+55 then
+                            table.insert(Hits,Human.RootPart)
+                        end
+                    end
+                end
+                return Hits
+            end
+            
+            spawn(
+                function()
+                while task.wait() do
+                    if  _G.FastAttackNormalSpeed then
+                        if SeraphFrame.activeController then
+                            if v.Humanoid.Health > 0 then
+                                SeraphFrame.activeController.timeToNextAttack = 2
+                                SeraphFrame.activeController.focusStart = 0
+                                SeraphFrame.activeController.hitboxMagnitude = 200
+                                SeraphFrame.activeController.humanoid.AutoRotate = true
+                                SeraphFrame.activeController.increment = 3 + 3 / 3
+                             end
+                        end
+                    end
+                end
+            end)
+            
+            function Boost()
+                spawn(function()
+                game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(SeraphFuckWeapon()))
                 end)
             end
-        end
-    end)
-end)
-
-local Module = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework)
-local CombatFramework = debug.getupvalues(Module)[2]
-local CameraShakerR = require(game.ReplicatedStorage.Util.CameraShaker)
-
-spawn(function()
-    while true do
-        if _G.FastAttack then
-            pcall(function()
-                CameraShakerR:Stop()
-                CombatFramework.activeController.attacking = false
-                CombatFramework.activeController.timeToNextAttack = 0
-                CombatFramework.activeController.increment = 3
-                CombatFramework.activeController.hitboxMagnitude = 100
-                CombatFramework.activeController.blocking = false
-                CombatFramework.activeController.timeToNextBlock = 0
-                CombatFramework.activeController.focusStart = 0
-                CombatFramework.activeController.humanoid.AutoRotate = true
+            
+            function Unboost()
+                spawn(function()
+                    game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("unequipWeapon",tostring(SeraphFuckWeapon()))
+                end)
+            end
+            
+            local cdnormal = 9e9
+            local Animation = Instance.new("Animation")
+            local CooldownFastAttack = 0
+            Attack = function()
+                local ac = SeraphFrame.activeController
+                if ac and ac.equipped then
+                    task.spawn(
+                        function()
+                        if tick() - cdnormal > 9e9 then
+                            ac:attack()
+                            cdnormal = tick()
+                        else
+                             Animation.AnimationId = ac.anims.basic[2]
+                            ac.humanoid:LoadAnimation(Animation):Play(0, 0) --ท่าไม่ทำงานแก้เป็น (1,1)
+                            game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", getHits(120), 2, "")
+                        end
+                    end)
+                end
+            end
+            
+            b = tick()
+            spawn(function()
+                while _G.FastAttackNormalSpeed do
+                    if _G.FastAttackNormalSpeed then
+                        if b - tick() > 9e9 then
+                            b = tick()
+                        end
+                        pcall(function()
+                            for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
+                                if v.Humanoid.Health > 0 then
+                                    if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 50 then
+                                        Attack()
+                                        task.wait()
+                                        Boost()
+                                    end
+                                end
+                            end
+                        end)
+                    end
+                end
             end)
-        end
-        task.wait()
-    end
-end)
-
+            
+            k = tick()
+            spawn(function()
+                while  task.wait() do
+                    if  _G.FastAttackNormalSpeed then
+                        if k - tick() > 9e9 then
+                            k = tick()
+                        end
+                        pcall(function()
+                            for i, v in pairs(game.Workspace.Enemies:GetChildren()) do
+                                if v.Humanoid.Health > 0 then
+                                    if (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 50 then
+                                    Unboost()
+                                    end
+                                end
+                            end
+                        end)
+                    end
+                end
+            end)
+            
+            tjw1 = true
+            spawn(
+                function()
+                    local a = game.Players.LocalPlayer
+                    local b = require(a.PlayerScripts.CombatFramework.Particle)
+                    local c = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
+                    if not shared.orl then
+                        shared.orl = c.wrapAttackAnimationAsync
+                    end
+                    if not shared.cpc then
+                        shared.cpc = b.play
+                    end
+                    if tjw1 then
+                        pcall(
+                            function()
+                                c.wrapAttackAnimationAsync = function(d, e, f, g, h)
+                                    local i = c.getBladeHits(e, f, g)
+                                    if i then
+                                        b.play = function()
+                                        end
+                                        d:Play(25.25, 20.25, 23)
+                                        h(i)
+                                        b.play = shared.cpc
+                                        wait(9e9)
+                                        d:Stop()
+                                    end
+                                end
+                            end
+                        )
+                    end
+                end
+            )
+            
+            
+            function AttackFunction()
+	local ac = CombatFrameworkR.activeController
+	if ac and ac.equipped then
+		for indexincrement = 1, 1 do
+			local bladehit = getAllBladeHits(60)
+			if #bladehit > 0 then
+				local AcAttack8 = debug.getupvalue(ac.attack, 5)
+				local AcAttack9 = debug.getupvalue(ac.attack, 6)
+				local AcAttack7 = debug.getupvalue(ac.attack, 4)
+				local AcAttack10 = debug.getupvalue(ac.attack, 7)
+				local NumberAc12 = (AcAttack8 * 798405 + AcAttack7 * 727595) % AcAttack9
+				local NumberAc13 = AcAttack7 * 798405
+				(function()
+					NumberAc12 = (NumberAc12 * AcAttack9 + NumberAc13) % 1099511627776
+					AcAttack8 = math.floor(NumberAc12 / AcAttack9)
+					AcAttack7 = NumberAc12 - AcAttack8 * AcAttack9
+				end)()
+				AcAttack10 = AcAttack10 + 1
+				debug.setupvalue(ac.attack, 5, AcAttack8)
+				debug.setupvalue(ac.attack, 6, AcAttack9)
+				debug.setupvalue(ac.attack, 4, AcAttack7)
+				debug.setupvalue(ac.attack, 7, AcAttack10)
+				for k, v in pairs(ac.animator.anims.basic) do
+					v:Play(20,10.01,10)
+				end                 
+				if game.Players.LocalPlayer.Character:FindFirstChildOfClass("Tool") and ac.blades and ac.blades[1] then 
+					game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("weaponChange",tostring(CurrentWeapon()))
+					game.ReplicatedStorage.Remotes.Validator:FireServer(math.floor(NumberAc12 / 1099511627776 * 16777215), AcAttack10)
+					game:GetService("ReplicatedStorage").RigControllerEvent:FireServer("hit", bladehit, 2, "") 
+				end
+			end
+		end
+	end
+end
+            
+            local CameRa = require(game:GetService("Players").LocalPlayer.PlayerScripts.CombatFramework.CameraShaker)
+            CameRa.CameraShakeInstance.CameraShakeState = {FadingIn = 3,FadingOut = 2,Sustained = 0,Inactive =1}
+            
+            local Client = game.Players.LocalPlayer
+            local STOP = require(Client.PlayerScripts.CombatFramework.Particle)
+            local STOPRL = require(game:GetService("ReplicatedStorage").CombatFramework.RigLib)
+            spawn(function()
+                pcall(function()
+                    if not shared.orl then
+                        shared.orl = STOPRL.wrapAttackAnimationAsync
+                    end
+                        if not shared.cpc then
+                            shared.cpc = STOP.play 
+                        end
+                    spawn(function()
+                    require(game.ReplicatedStorage.Util.CameraShaker):Stop()
+                  require(game.ReplicatedStorage.Util.CameraShaker):Stop()
+                        game:GetService("RunService").Stepped:Connect(function()
+                            STOPRL.wrapAttackAnimationAsync = function(a,b,c,d,func)
+                                local Hits = STOPRL.getBladeHits(b,c,d)
+                                if Hits then
+                                    if  _G.FastAttackNormalSpeed then
+                                        STOP.play = function() end
+                                        a:Play(21,29,30)
+                                        func(Hits)
+                                        STOP.play = shared.cpc
+                                        wait(a.length * 0)
+                                        a:Stop()
+                                    else
+                                        func(Hits)
+                                        STOP.play = shared.cpc
+                                        wait(a.length * 0)
+                                        a:Stop()
+                                    end
+                                end
+                            end
+                        end)
+                    end)
+                end)
+                end)
+               
+	end)
