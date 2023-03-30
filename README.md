@@ -6926,6 +6926,192 @@ spawn(function()
     end)
 end)
 
+function MaterialMon()
+			if _G.SelectMaterial == "Radioactive Material" then
+				MMon = "Factory Staff [Lv. 800]"
+				MPos = CFrame.new(-507.7895202636719, 72.99479675292969, -126.45632934570312)
+				SP = "Bar"
+			elseif _G.SelectMaterial == "Mystic Droplet" then
+				MMon = "Water Fighter [Lv. 1450]"
+				MPos = CFrame.new(-3214.218017578125, 298.69952392578125, -10543.685546875)
+				SP = "ForgottenIsland"
+			elseif _G.SelectMaterial == "Magma Ore" then
+				if game.PlaceId == 2753915549 then
+					MMon = "Military Spy [Lv. 325]"
+					MPos = CFrame.new(-5850.2802734375, 77.28675079345703, 8848.6748046875)
+					SP = "Magma"
+				elseif game.PlaceId == 4442272183 then
+					MMon = "Lava Pirate [Lv. 1200]"
+					MPos = CFrame.new(-5234.60595703125, 51.953372955322266, -4732.27880859375)
+					SP = "CircleIslandFire"
+				end
+			elseif _G.SelectMaterial == "Angel Wings" then
+				MMon = "Royal Soldier [Lv. 550]"
+				MPos = CFrame.new(-7827.15625, 5606.912109375, -1705.5833740234375)
+				SP = "Sky2"
+			elseif _G.SelectMaterial == "Leather" then
+				if game.PlaceId == 2753915549 then
+					MMon = "Pirate [Lv. 36]"
+					MPos = CFrame.new(-1211.8792724609375, 4.787090301513672, 3916.83056640625)
+					SP = "Pirate"
+				elseif game.PlaceId == 4442272183 then
+					MMon = "Marine Captain [Lv. 900]"
+					MPos = CFrame.new(-2010.5059814453125, 73.00115966796875, -3326.620849609375)
+					SP = "Greenb"
+				elseif game.PlaceId == 7449423635 then
+					MMon = "Jungle Pirate [Lv. 1900]"
+					MPos = CFrame.new(-11975.78515625, 331.7734069824219, -10620.0302734375)
+					SP = "PineappleTown"
+				end
+			elseif _G.SelectMaterial == "Scrap Metal" then
+				if game.PlaceId == 2753915549 then
+					MMon = "Brute [Lv. 45]"
+					MPos = CFrame.new(-1132.4202880859375, 14.844913482666016, 4293.30517578125)
+					SP = "Pirate"
+				elseif game.PlaceId == 4442272183 then
+					MMon = "Mercenary [Lv. 725]"
+					MPos = CFrame.new(-972.307373046875, 73.04473876953125, 1419.2901611328125)
+					SP = "DressTown"
+				elseif game.PlaceId == 7449423635 then
+					MMon = "Pirate Millionaire [Lv. 1500]"
+					MPos = CFrame.new(-289.6311950683594, 43.8282470703125, 5583.66357421875)
+					SP = "Default"
+				end
+			elseif _G.SelectMaterial == "Demonic Wisp" then
+				MMon = "Demonic Soul [Lv. 2025]"
+				MPos = CFrame.new(-9503.388671875, 172.139892578125, 6143.0634765625)
+				SP = "HauntedCastle"
+			elseif _G.SelectMaterial == "Vampire Fang" then
+				MMon = "Vampire [Lv. 975]"
+				MPos = CFrame.new(-5999.20458984375, 6.437741279602051, -1290.059326171875)
+				SP = "Graveyard"
+			elseif _G.SelectMaterial == "Conjured Cocoa" then
+				MMon = "Chocolate Bar Battler [Lv. 2325]"
+				MPos = CFrame.new(744.7930908203125, 24.76934242248535, -12637.7255859375)
+				SP = "Chocolate"
+			elseif _G.SelectMaterial == "Dragon Scale" then
+				MMon = "Dragon Crew Warrior [Lv. 1575]"
+				MPos = CFrame.new(5824.06982421875, 51.38640213012695, -1106.694580078125)
+				SP = "Hydra1"
+			elseif _G.SelectMaterial == "Gunpowder" then
+				MMon = "Pistol Billionaire [Lv. 1525]"
+				MPos = CFrame.new(-379.6134338378906, 73.84449768066406, 5928.5263671875)
+				SP = "Default"
+			elseif _G.SelectMaterial == "Fish Tail" then
+				MMon = "Fishman Captain [Lv. 1800]"
+				MPos = CFrame.new(-10961.0126953125, 331.7977600097656, -8914.29296875)
+				SP = "PineappleTown"
+			elseif _G.SelectMaterial == "Mini Tusk" then
+				MMon = "Mythological Pirate [Lv. 1850]"
+				MPos = CFrame.new(-13516.0458984375, 469.8182373046875, -6899.16064453125)
+				SP = "BigMansion"
+			end
+		end
+
+local MaterialMethod
+if World1 then
+	MaterialMethod = {
+ "Magma Ore",
+ "Angel Wings",
+ "Leather",
+ "Scrap Metal",
+ "Radioactive Material",
+ }
+elseif World2 then
+MaterialMethod = {
+ "Mystic Droplet",
+ "Magma Ore",
+ "Leather",
+ "Scrap Metal",
+ "Demonic Wisp",
+ "Vampire Fang",
+ "Radioactive Material",
+ }
+ elseif World3 then
+MaterialMethod = {
+ "Leather",
+ "Scrap Metal",
+ "Vampire Fang",
+ "Conjured Cocoa",
+ "Dragon Scale",
+ "Gunpowder",
+ "Fish Tail",
+ "Mini Tusk",
+ "Radioactive Material",
+ }
+ end
+ 
+Main:Seperator("\\\\\  Materials  //")
+ 
+ local SelectMaterial = Main:Dropdown("Select Material",MaterialMethod,function(value)
+ _G.SelectMaterial = value
+end)
+
+Main:Toggle("Auto Farm Material",_G.AutoFarmMaterial,function(t)
+			_G.AutoFarmMaterial = t
+			StopTween(_G.AutoFarmMaterial)
+end)
+		
+spawn(function()
+			while task.wait() do
+				pcall(function()
+					if _G.AutoFarmMaterial and _G.SelectMaterial then
+						MaterialMon()
+						if game.Workspace.Enemies:FindFirstChild(MMon) then
+							for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+								if v.Name == MMon then
+									if v:FindFirstChild("HumanoidRootPart") then
+										repeat task.wait()
+											AutoHaki()
+											EquipWeapon(_G.SelectWeapon)
+												PosMon = v.HumanoidRootPart.CFrame
+												v.HumanoidRootPart.CanCollide = false
+												v.Humanoid.WalkSpeed = 0
+												v.Head.CanCollide = false
+												v.HumanoidRootPart.Size = Vector3.new(50,50,50)
+												StartMagnet = true
+												TP(v.HumanoidRootPart.CFrame * MethodFarm)
+												game:GetService'VirtualUser':CaptureController()
+												game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
+											MatMon = v.Name
+											MatPos = v.HumanoidRootPart.CFrame
+										until not _G.AutoFarmMaterial or not v.Parent or v.Humanoid.Health <= 0
+									end
+								end
+							end
+						else
+							TP(MPos)
+						end
+					end
+				end)
+			end
+end)
+
+spawn(function()
+			while task.wait() do
+				if _G.AutoFarmMaterial then
+					pcall(function()
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if v.Name == MMon and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+								v.Humanoid.WalkSpeed = 0
+								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+								--v.Humanoid:ChangeState(14)
+								v.HumanoidRootPart.CanCollide = false
+								v.Head.CanCollide = false
+								v.HumanoidRootPart.CFrame = MatPos
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								v.Humanoid:ChangeState(11)
+								v.Humanoid:ChangeState(14)
+								sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
+							end
+						end
+					end)
+				end
+			end
+end)
+
 Combat2:Seperator(" /// Kill Player /// ")
 
 Playerslist = {}
