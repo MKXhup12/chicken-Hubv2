@@ -7041,13 +7041,13 @@ MaterialMethod = {
  }
  end
  
-Main:Seperator("\\\\\  Materials  //")
+Main:Seperator(" Materials ")
  
  local SelectMaterial = Main:Dropdown("Select Material",MaterialMethod,function(value)
  _G.SelectMaterial = value
 end)
 
-Main:Toggle("Auto Farm Material",_G.AutoFarmMaterial,function(t)
+Main:Toggle("Farm Selected Material",_G.AutoFarmMaterial,function(t)
 			_G.AutoFarmMaterial = t
 			StopTween(_G.AutoFarmMaterial)
 end)
@@ -7063,14 +7063,14 @@ spawn(function()
 									if v:FindFirstChild("HumanoidRootPart") then
 										repeat task.wait()
 											AutoHaki()
-											EquipWeapon(_G.SelectWeapon)
+											EquipWeapon(_G.Select_Weapon)
 												PosMon = v.HumanoidRootPart.CFrame
 												v.HumanoidRootPart.CanCollide = false
 												v.Humanoid.WalkSpeed = 0
 												v.Head.CanCollide = false
 												v.HumanoidRootPart.Size = Vector3.new(50,50,50)
 												StartMagnet = true
-												TP(v.HumanoidRootPart.CFrame * MethodFarm)
+												topos(v.HumanoidRootPart.CFrame * MethodFarm)
 												game:GetService'VirtualUser':CaptureController()
 												game:GetService'VirtualUser':Button1Down(Vector2.new(1280, 672))
 											MatMon = v.Name
@@ -7080,7 +7080,7 @@ spawn(function()
 								end
 							end
 						else
-							TP(MPos)
+							topos(MPos)
 						end
 					end
 				end)
@@ -7089,16 +7089,91 @@ end)
 
 spawn(function()
 			while task.wait() do
-				if _G.AutoFarmMaterial then
+				if _G.BringNormal and _G.AutoFarmMaterial then
 					pcall(function()
 						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
-							if v.Name == MMon and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+							if v.Name == MatMon and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
 								v.Humanoid.WalkSpeed = 0
 								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
 								--v.Humanoid:ChangeState(14)
 								v.HumanoidRootPart.CanCollide = false
 								v.Head.CanCollide = false
 								v.HumanoidRootPart.CFrame = MatPos
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								v.Humanoid:ChangeState(11)
+								v.Humanoid:ChangeState(14)
+								sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
+							end
+						end
+					end)
+				end
+			end
+end)
+
+spawn(function()
+			while task.wait() do
+				if _G.BringNormal and _G.Select_Mode_Farm == "Near Farm Mode" then
+					pcall(function()
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if v.Name == Mon and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+								v.Humanoid.WalkSpeed = 0
+								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+								--v.Humanoid:ChangeState(14)
+								v.HumanoidRootPart.CanCollide = false
+								v.Head.CanCollide = false
+								v.HumanoidRootPart.CFrame = PosMon
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								v.Humanoid:ChangeState(11)
+								v.Humanoid:ChangeState(14)
+								sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
+							end
+						end
+					end)
+				end
+			end
+end)
+
+spawn(function()
+			while task.wait() do
+				if _G.AutoFarmSelectMonster then
+					pcall(function()
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if v.Name == Mon and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+								v.Humanoid.WalkSpeed = 0
+								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+								--v.Humanoid:ChangeState(14)
+								v.HumanoidRootPart.CanCollide = false
+								v.Head.CanCollide = false
+								v.HumanoidRootPart.CFrame = PosMon
+								if v.Humanoid:FindFirstChild("Animator") then
+									v.Humanoid.Animator:Destroy()
+								end
+								v.Humanoid:ChangeState(11)
+								v.Humanoid:ChangeState(14)
+								sethiddenproperty(game.Players.LocalPlayer,"SimulationRadius",math.huge)
+							end
+						end
+					end)
+				end
+			end
+end)
+
+spawn(function()
+			while task.wait() do
+				if _G.AutoFarmSelectMonster then
+					pcall(function()
+						for i,v in pairs(game.Workspace.Enemies:GetChildren()) do
+							if v.Name == Ms and (v.HumanoidRootPart.Position - game.Players.LocalPlayer.Character.HumanoidRootPart.Position).Magnitude <= 400 then
+								v.Humanoid.WalkSpeed = 0
+								v.HumanoidRootPart.Size = Vector3.new(60,60,60)
+								--v.Humanoid:ChangeState(14)
+								v.HumanoidRootPart.CanCollide = false
+								v.Head.CanCollide = false
+								v.HumanoidRootPart.CFrame = PosMon
 								if v.Humanoid:FindFirstChild("Animator") then
 									v.Humanoid.Animator:Destroy()
 								end
